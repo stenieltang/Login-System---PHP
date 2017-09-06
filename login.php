@@ -4,7 +4,7 @@
 ?>
 
 <?php
-	include_once 'inc/header.php'
+	include("inc/header.php");
 ?>
 
 <div class = "container form-signin">
@@ -74,5 +74,5 @@
 </script>
 
 <?php
-	include_once 'inc/footer.php'
+	include("inc/footer.php");
 ?>

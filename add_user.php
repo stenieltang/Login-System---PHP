@@ -3,8 +3,8 @@
 ?>
 	 
 	<div class="container">
-      <form class="form-signin" name="signup-form" action="includes/signup.inc.php" method="POST">
-        <h2 class="form-signin-heading">Sign up page</h2>
+      <form class="form-signin" name="signup-form" action="includes/addUser.inc.php" method="POST">
+        <h2 class="form-signin-heading">Add User page</h2>
 
         <label class="sr-only">Firstname</label>
         <input type="text" name="fname" class="form-control" placeholder="Firstname" autofocus>
@@ -21,7 +21,7 @@
         <label class="sr-only">Password</label>
         <input type="password" name="pwd" class="form-control" placeholder="Password">
         
-        <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Sign up</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" name="submit">Add</button>
       </form>
 
     </div>

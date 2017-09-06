@@ -38,3 +38,7 @@ body {
   border-top-right-radius: 0;
 }
  
+/* Error message color*/
+  .error {
+    color: red;
+  }

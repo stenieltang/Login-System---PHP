@@ -5,7 +5,7 @@ session_start();
 
 if (isset($_POST['login'])) {
 
-	include_once 'dbh.php';
+	include("dbh.php");
 
 	$uid = mysqli_real_escape_string($conn, $_POST['uid']);
 	$pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
@@ -39,7 +39,7 @@ if (isset($_POST['login'])) {
 					$_SESSION['u_last'] = $row['user_last'];
 					$_SESSION['u_email'] = $row['user_email'];
 					$_SESSION['u_uid'] = $row['user_uid'];
-					header("Location: ../homepage.php?login=success");
+					header("Location: ../homepage.php?msg=success");
 					exit();
 				}
 			}

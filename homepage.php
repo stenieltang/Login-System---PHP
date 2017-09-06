@@ -1,13 +1,13 @@
 <?php
-  include_once 'inc/header.php'
+  include("inc/header.php");
 ?>
 
 <div class="container">
-     <h1> HOME </h1>
-     
+	 <h2 class="title-member">Home Page</h2>
+	
 </div>
 
 
 <?php
-  include_once 'inc/footer.php'
+  include("inc/footer.php");
 ?>

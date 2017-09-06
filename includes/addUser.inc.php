@@ -13,19 +13,19 @@ if (isset($_POST['submit'])) {
 	//Error handlers
 	//Check for empty fields
 	if(empty($first) || empty($last) || empty($email) || empty($username) || empty($pwd)) {
-		header("Location: ../signup.php?signup=empty");
+		header("Location: ../add_user.php?user=empty");
 		exit();
 
 	} else {
 		//Check if input characters are valid
 		if(!preg_match("/^[a-zA-Z]*$/", $first) || !preg_match("/^[a-zA-Z]*$/", $last)) {
-			header("Location: ../signup.php?signup=invalid");
+			header("Location: ../add_user.php?user=invalid");
 			exit();
 
 		} else {
 			//Check if email is valid
 			if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-				header("Location: ../signup.php?signup=email");
+				header("Location: ../add_user.php?user=email");
 				exit();
 
 			} else {
@@ -35,7 +35,7 @@ if (isset($_POST['submit'])) {
 				$resultCheck = mysqli_num_rows($result);
 
 				if($resultCheck > 0) {
-					header("location: ../signup.php?signup=usertaken");
+					header("location: ../add_user.php?user=usertaken");
 					exit();
 
 				} else {
@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
 					//Insert the user into the database
 					$sql = "INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd) VALUES ('$first', '$last', '$email', '$username', '$hashedPwd');";
 					mysqli_query($conn, $sql);
-					header("location: ../signup.php?signup=success");
+					header("location: ../users.php?user=success");
 					exit();
 				}
 			}
@@ -54,6 +54,6 @@ if (isset($_POST['submit'])) {
 	 }
 
 } else {
-	header("Location: ../signup.php");
+	header("Location: ../add_user.php");
 	exit();
 }

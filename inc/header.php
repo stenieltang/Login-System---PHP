@@ -11,7 +11,14 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/nav.css">
 	<link rel="stylesheet" type="text/css" href="css/calc.css">
+	<link rel="stylesheet" type="text/css" href="css/users.css">
+	 <!-- bootstrap v3.3.7 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+	
+	<!-- bootstrap v4-beta -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- jQuery CDN -->
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 </head>
 <body>
 	<header>
@@ -26,14 +33,17 @@
 
 						      <div class="collapse navbar-collapse" id="navbarsExample02">
 						        <ul class="navbar-nav mr-auto">
-						          <li class="nav-item active">
-						            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+						          <li class="nav-item">
+						            <a class="nav-link" href="homepage.php">Home</a>
+						          </li>
+						          <li class="nav-item">
+						            <a class="nav-link" href="users.php">Users</a>
 						          </li>
 						          <li class="nav-item">
 						            <a class="nav-link" href="calculator.php">Calculator</a>
 						          </li>
 						           <li class="nav-item">
-						            <a class="nav-link" href="#">Link</a>
+						            <a class="nav-link" href="#">Blog</a>
 						          </li>
 						        </ul>
 						        <form class="form-inline my-2 my-md-0" action="includes/logout.inc.php" method="POST">
