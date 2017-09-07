@@ -41,8 +41,8 @@
 		     				<td><?php echo $row['user_email']; ?></td>
 		     				<td><?php echo $row['user_uid']; ?></td>
 		     				<td>	     					
-						        <a href='edit.php?edit=$row[user_id];'>Edit</a>	
-						        <a href="#">Delete</a>					    
+						        <a href='edit_user.php?edit=<?php echo $row["user_id"]; ?>;'>Edit</a>	
+						        <a href="delete_user.php?delete=<?php echo $row["user_id"]; ?>;" onclick="return confirm('Are you sure?');">Delete</a>					    
 		     				</td>
 		     			</tr>
 	     			</tbody>
